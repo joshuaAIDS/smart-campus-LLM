@@ -1,0 +1,5 @@
+{
+  "name": "smart Campus Connect",
+  "description": "An AI assistant for Panimalar Engineering College to help with campus navigation, fees, and general information.",
+  "requestFramePermissions": []
+}
