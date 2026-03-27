@@ -87,12 +87,22 @@ BUS ROUTES:
 RESPONSE STYLE:
 - Short, clear, helpful, and informative.
 - If a user asks something unrelated to the campus, respond with: "I am the Panimalar Campus Connect assistant. I can help you with campus navigation and information about Panimalar Engineering College."`;
-// Inside your SYSTEM_INSTRUCTION in App.tsx
-`NAVIGATION & STREET VIEW:
-- When asked for locations, provide a description and the Street View link.
+
+
+
+`[Existing College Info & Departments...]
+
+LOCATIONS & STREET VIEW NAVIGATION:
 - Main Gate: [Street View](https://www.google.com/maps/@13.0494,80.0756,3a,75y,280h,90t/data=!3m6!1e1)
-- Admin Block: [Street View](https://www.google.com/maps/@13.0497,80.0752,3a,75y,100h,90t/data=!3m6!1e1)
-- Library: [Street View](https://www.google.com/maps/@13.0501,80.0745,3a,75y,180h,90t/data=!3m6!1e1)`
+- Administration Block: Near the main gate. [Street View](https://www.google.com/maps/@13.0497,80.0752,3a,75y,100h,90t/data=!3m6!1e1)
+- Admission Office: Inside the administration block.
+- Central Library: Central academic block. [Street View](https://www.google.com/maps/@13.0501,80.0745,3a,75y,180h,90t/data=!3m6!1e1)
+- Campus Map: [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Panimalar+Engineering+College+Chennai)
+
+RESPONSE STYLE:
+- Short, clear, helpful, and informative.
+- MANDATORY: Whenever a user asks for a location or directions, you MUST include the corresponding [Street View] link from the list above.
+- If a user asks something unrelated, respond: "I am the Panimalar Campus Connect assistant."`
 const facilities = [
   { name: "Central Library", description: "A vast collection of academic books, journals, and digital resources located in the central academic block." },
   { name: "Computer Labs", description: "High-end computing facilities with high-speed internet, located in the CSE department building." },
