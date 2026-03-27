@@ -87,7 +87,12 @@ BUS ROUTES:
 RESPONSE STYLE:
 - Short, clear, helpful, and informative.
 - If a user asks something unrelated to the campus, respond with: "I am the Panimalar Campus Connect assistant. I can help you with campus navigation and information about Panimalar Engineering College."`;
-
+// Inside your SYSTEM_INSTRUCTION in App.tsx
+`NAVIGATION & STREET VIEW:
+- When asked for locations, provide a description and the Street View link.
+- Main Gate: [Street View](https://www.google.com/maps/@13.0494,80.0756,3a,75y,280h,90t/data=!3m6!1e1)
+- Admin Block: [Street View](https://www.google.com/maps/@13.0497,80.0752,3a,75y,100h,90t/data=!3m6!1e1)
+- Library: [Street View](https://www.google.com/maps/@13.0501,80.0745,3a,75y,180h,90t/data=!3m6!1e1)`
 const facilities = [
   { name: "Central Library", description: "A vast collection of academic books, journals, and digital resources located in the central academic block." },
   { name: "Computer Labs", description: "High-end computing facilities with high-speed internet, located in the CSE department building." },
